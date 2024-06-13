@@ -1,0 +1,12 @@
+#!bin/bash
+
+name="Sumit"
+readonly age=25
+Class='B'i
+user=$(whoami)
+
+echo "My name is $name studying in class $Class"
+age=35
+echo "Age is $age"
+
+echo "Script run on $user"

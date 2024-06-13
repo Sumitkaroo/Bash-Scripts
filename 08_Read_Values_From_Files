@@ -1,0 +1,9 @@
+#! bin/bash
+
+items="/root/ShellScriptingCodes/names.txt"
+
+for name in $(cat $items)
+do
+	echo "Names are $name"
+done
+

@@ -1,0 +1,10 @@
+#! bin/bash
+
+myVar="Hey boy, How are you?"
+echo "Length of the string is ${#myVar}"
+
+echo "Upper case is ${myVar^^}"
+echo "Lower case is ${myVar,,}"
+echo "Replacing boy with buddy ${myVar/boy/Buddy}"
+echo "${myVar}"
+echo "Slicing ${myVar:4:8}"

@@ -1,0 +1,13 @@
+#! bin/bash
+
+let a=5*10
+echo "Multiplication of 5 and 10 is $a"
+
+let a++
+echo "Value of a is now $a"
+
+echo "Final value of a is $a and $(($a*5))"
+
+read -p "Enter any number" d
+let div=$d/2
+echo "division of the number is $div"

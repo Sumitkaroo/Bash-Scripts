@@ -1,0 +1,13 @@
+#! bin/bash
+
+echo "Choose an option"
+echo "a. to see the current date"
+echo "b. to see the current hostname"
+
+read choice
+
+case $choice in
+a) date;;
+b) whoami;;
+*) echo "None of the above"
+esac

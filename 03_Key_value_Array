@@ -1,0 +1,7 @@
+#! bin/bash
+
+declare -A arr
+arr=([name]=Sumit [Age]=25 [Add]=001_Mangal)
+
+echo "Details of the user is Name ${arr[name]} Age is ${arr[Age]} and Address is ${arr[Add]}"
+

@@ -1,0 +1,7 @@
+#!bin/bash
+
+myArray=(10 5 10.2 Hello "Sumit Karoo")
+echo "Array elements are ${myArray[*]}"
+echo "Element in 2 position ${myArray[2]}"
+echo "Length of array is ${#myArray[*]}"
+echo "To get a range of values ${myArray[*]:2:3}"

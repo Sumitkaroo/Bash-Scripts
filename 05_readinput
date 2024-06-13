@@ -1,0 +1,8 @@
+#! bin/bash
+
+#read var
+#echo "User input value is $var"
+
+read -p "Enter the number " n
+echo "Entered number is: $n"
+

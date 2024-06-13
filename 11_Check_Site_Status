@@ -1,0 +1,14 @@
+#!bin/bash
+
+read -p "Enter the site name " site
+
+ping -c 1 $site
+#sleep 10s
+
+if [[ $? -eq 0 ]]
+then
+	echo "Site is pinging successfully to $site"
+else
+	echo "Exit Status $?"
+	echo "Site is not pinging to $site"	
+fi

@@ -1,0 +1,35 @@
+<<comment 
+Calculator funtion is created which will help to calculate add, mul, div, and substraction using functions, case, user input 
+comment
+
+mul(){
+echo "Multiplication of two number is $(($1*$2))"
+}
+
+add(){
+echo "Addition of two number is $(($1+$2))"
+}
+
+div(){
+echo "Division of two number is $(($1/$2))"
+}
+
+subt(){
+echo "Subtraction of two number is #(($1-$2))"
+}
+
+        
+read -p "Enter 1st Number" A
+read -p "Enter 2nd Number" B
+
+read -p "Which operation you want to perform?" choice
+
+case $choice in
+	a)add $A $B ;;
+
+	b)mul $A $B ;;
+
+	c)div $A $B ;;
+
+	d)subt $A $B ;;
+esac
