@@ -1,0 +1,3 @@
+#!bin/bash
+
+logger "This this the log from ${0} file"

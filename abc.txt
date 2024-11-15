@@ -1,0 +1,14 @@
+● jenkins.service - Jenkins Continuous Integration Server
+   Loaded: loaded (/usr/lib/systemd/system/jenkins.service; enabled; vendor preset: disabled)
+   Active: failed (Result: exit-code) since Sat 2024-06-15 21:58:23 IST; 1min 36s ago
+  Process: 6814 ExecStart=/usr/bin/jenkins (code=exited, status=1/FAILURE)
+ Main PID: 6814 (code=exited, status=1/FAILURE)
+
+Jun 15 21:58:23 localhost.localdomain systemd[1]: jenkins.service: Failed with result 'exit-code'.
+Jun 15 21:58:23 localhost.localdomain systemd[1]: Failed to start Jenkins Continuous Integration Server.
+Jun 15 21:58:23 localhost.localdomain systemd[1]: jenkins.service: Service RestartSec=100ms expired, scheduling restart.
+Jun 15 21:58:23 localhost.localdomain systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 5.
+Jun 15 21:58:23 localhost.localdomain systemd[1]: Stopped Jenkins Continuous Integration Server.
+Jun 15 21:58:23 localhost.localdomain systemd[1]: jenkins.service: Start request repeated too quickly.
+Jun 15 21:58:23 localhost.localdomain systemd[1]: jenkins.service: Failed with result 'exit-code'.
+Jun 15 21:58:23 localhost.localdomain systemd[1]: Failed to start Jenkins Continuous Integration Server.

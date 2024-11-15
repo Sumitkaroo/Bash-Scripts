@@ -1,0 +1,10 @@
+#!/bin/bash
+
+df -h | awk '{print $1,$5}' | while read -r disk usage;
+do
+usage_value=$(echo $usage | sed 's/%//')
+if [ "$usage_value" -gt 20 ]
+then
+echo "Disk: $disk, CPU usage is high: $usage"
+fi
+done

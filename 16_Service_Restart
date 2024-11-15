@@ -1,0 +1,20 @@
+#!/bin/bash
+
+ServiceName="httpd"
+
+OP=$(systemctl is-active "$ServiceName")
+
+if [ "$OP" = "active" ];
+then
+echo "$ServiceName is running"
+else
+systemctl restart "$ServiceName"
+
+OP=$(systemctl is-active "$ServiceName")
+if [ "$OP" == "active" ];
+then
+echo "$ServiceName successfully restarted"
+else
+echo "Failed to restart $ServiceName"
+fi
+fi
